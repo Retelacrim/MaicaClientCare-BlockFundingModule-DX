@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>De_identified_Sessions_Only__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Denotes that only sessions for de-identified or non-specific Participant(s) are delivered under this program</inlineHelpText>
+    <label>De-identified Sessions Only</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

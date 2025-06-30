@@ -130,73 +130,29 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Allows for Support Items to be linked to Funding Programs for the purpose of tallying appropriate delivered services</description>
-    <enableActivities>false</enableActivities>
+    <description>Represents a funding or reporting period for a Funding Program</description>
+    <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>Private</externalSharingModel>
-    <label>Program Support Item</label>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Program Period</label>
     <nameField>
-        <displayFormat>FPP - {00000}</displayFormat>
-        <label>Program Support Item ID</label>
+        <displayFormat>PP - {00000}</displayFormat>
+        <label>Program Period ID</label>
+        <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Program Support Item</pluralLabel>
+    <pluralLabel>Program Periods</pluralLabel>
     <searchLayouts></searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
-    <fields>
-        <fullName>Funding_Program__c</fullName>
-        <deleteConstraint>Restrict</deleteConstraint>
-        <label>Funding Program</label>
-        <referenceTo>Funding_Program__c</referenceTo>
-        <relationshipLabel>Program Support Items</relationshipLabel>
-        <relationshipName>Program_Support_Items</relationshipName>
-        <required>true</required>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Funding_Program_Priority__c</fullName>
-        <externalId>false</externalId>
-        <formula>Funding_Program__r.Priority__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Funding Program Priority</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Support_Item__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <label>Support Item</label>
-        <referenceTo>maica_cc__Support_Item__c</referenceTo>
-        <relationshipLabel>Funding Programs</relationshipLabel>
-        <relationshipName>Program_Support_Items</relationshipName>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
 </CustomObject>
